@@ -1,0 +1,5 @@
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_print\bin\Debug\lib_print.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_print\bin\Debug\lib_print.pdb
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_print\obj\Debug\lib_print.csprojResolveAssemblyReference.cache
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_print\obj\Debug\lib_print.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_print\obj\Debug\lib_print.pdb

@@ -1,0 +1,8 @@
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.exe.config
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.exe
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.pdb
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.csprojResolveAssemblyReference.cache
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.MainForm.resources
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.csproj.GenerateResource.Cache
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.exe
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.pdb
