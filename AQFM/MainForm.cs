@@ -28,7 +28,7 @@ namespace AQFM
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
-			//MessageBox.Show(DateTime.);
+			MessageBox.Show(DateTime.Today.Month.ToString());
 		}
 	}
 }
