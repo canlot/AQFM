@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using lib_config;
+
 
 namespace AQFM
 {
@@ -28,7 +30,16 @@ namespace AQFM
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
-			MessageBox.Show(DateTime.Today.Month.ToString());
+			//MessageBox.Show(DateTime.Today.Month.ToString());
+		}
+		
+		void MainFormLoad(object sender, EventArgs e)
+		{
+			/*
+			tbl_Konto konto = new tbl_Konto();
+			Testfenster fenster = new Testfenster(konto.create_table);
+			fenster.ShowDialog();
+			*/
 		}
 	}
 }
