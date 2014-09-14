@@ -3,3 +3,8 @@ C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\li
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.csprojResolveAssemblyReference.cache
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.dll
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_Conn_manager.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_Conn_manager.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.csprojResolveAssemblyReference.cache
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.pdb

@@ -13,9 +13,8 @@ namespace lib_config
 	/// <summary>
 	/// Description of tbl_Person.
 	/// </summary>
-	public class tbl_Person
+	public class tbl_Person : tbl_Abstract
 	{
-		public readonly string tbl_Name = "tbl_Person";
 		
 		public readonly string id = "Id";
 		public readonly string name = "Name";
@@ -30,9 +29,8 @@ namespace lib_config
 		public readonly string bic = "BIC"; //Bankleitzahl
 		public readonly string iban = "IBAN"; //Kontonummer
 		
-		public readonly string create_table;
 		
-		public tbl_Person()
+		public tbl_Person():base("tbl_Person")
 		{
 			
 			

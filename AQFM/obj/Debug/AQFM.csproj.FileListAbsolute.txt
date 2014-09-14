@@ -9,3 +9,14 @@ C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.pdb
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.Testfenster.resources
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_config.dll
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_config.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.exe.config
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.exe
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_config.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_config.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.csprojResolveAssemblyReference.cache
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.MainForm.resources
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.Testfenster.resources
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.csproj.GenerateResource.Cache
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.exe
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.pdb

@@ -40,14 +40,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Oberklasse_ein_aus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tbl_Abstract.cs" />
     <Compile Include="tbl_Ausgaben.cs" />
     <Compile Include="tbl_Dauerauftrag.cs" />
     <Compile Include="tbl_Einkommen.cs" />
     <Compile Include="tbl_Konto.cs" />
     <Compile Include="tbl_montl_Kasse.cs" />
     <Compile Include="tbl_Person.cs" />
+    <Compile Include="tbl_TransferArt.cs" />
+    <Compile Include="tbl_Waehrung.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

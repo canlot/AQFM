@@ -1,8 +1,8 @@
 ﻿/*
  * Erstellt mit SharpDevelop.
- * Benutzer: Jake
- * Datum: 09.09.2014
- * Zeit: 14:31
+ * Benutzer: Jakob
+ * Datum: 11.09.2014
+ * Zeit: 13:26
  * 
  * Sie können diese Vorlage unter Extras > Optionen > Codeerstellung > Standardheader ändern.
  */
@@ -11,11 +11,11 @@ using System;
 namespace lib_config
 {
 	/// <summary>
-	/// Description of Oberklasse_ein_aus.
+	/// Description of tbl_Waehrung.
 	/// </summary>
-	public class Oberklasse_ein_aus
+	public class tbl_Waehrung
 	{
-		public Oberklasse_ein_aus()
+		public tbl_Waehrung()
 		{
 		}
 	}

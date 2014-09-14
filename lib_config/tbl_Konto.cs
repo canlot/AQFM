@@ -13,9 +13,8 @@ namespace lib_config
 	/// <summary>
 	/// Description of tbl_Konto.
 	/// </summary>
-	public class tbl_Konto
+	public class tbl_Konto : tbl_Abstract
 	{
-		public readonly string tbl_Name = "tbl_Konto";
 		
 		public readonly string id = "Id";
 		public readonly string konto = "Konto";
@@ -23,9 +22,8 @@ namespace lib_config
 		public readonly string kategorie = "Kategorie";
 		
 		
-		public readonly string create_table;
 		
-		public tbl_Konto()
+		public tbl_Konto():base("tbl_Konto")
 		{
 			
 			

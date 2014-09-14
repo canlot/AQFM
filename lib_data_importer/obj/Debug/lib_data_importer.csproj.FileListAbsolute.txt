@@ -3,3 +3,8 @@ C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_data_importer\bin\Debug\l
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_data_importer\obj\Debug\lib_data_importer.csprojResolveAssemblyReference.cache
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_data_importer\obj\Debug\lib_data_importer.dll
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_data_importer\obj\Debug\lib_data_importer.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_importer\bin\Debug\lib_data_importer.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_importer\bin\Debug\lib_data_importer.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_importer\obj\Debug\lib_data_importer.csprojResolveAssemblyReference.cache
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_importer\obj\Debug\lib_data_importer.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_importer\obj\Debug\lib_data_importer.pdb
