@@ -13,10 +13,18 @@ namespace lib_config
 	/// <summary>
 	/// Description of tbl_Waehrung.
 	/// </summary>
-	public class tbl_Waehrung
+	public class tbl_Waehrung : tbl_Abstract
 	{
-		public tbl_Waehrung()
+		public readonly string id = "Id";
+		public readonly string waerung = "Währung";
+		
+		public tbl_Waehrung():base("tbl_Waerung")
 		{
+			
+			create_table = "create table " + tbl_Name + "( " +
+				id + " int not null auto_increment, " +
+				waerung + " varchar(100) not null, " +
+				"primary key " + "(" + id + ")" + ")";
 		}
 	}
 }

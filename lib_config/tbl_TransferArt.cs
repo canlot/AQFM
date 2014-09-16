@@ -19,9 +19,13 @@ namespace lib_config
 		public readonly string id = "Id";
 		public readonly string TransferArt = "Transfer Art";
 		
-		public tbl_TransferArt():base("tbl_SpendeArt")
+		public tbl_TransferArt():base("tbl_TransferArt")
 		{
 			
+			create_table = "create table " + tbl_Name + " ( " +
+				id + " int not null auto_increment, " +
+				TransferArt + " varchar(100) not null, " +
+				"primary key (" + id + " )" + ")";
 			
 		}
 	}
