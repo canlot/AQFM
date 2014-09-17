@@ -1,10 +1,10 @@
-C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\bin\Debug\lib_config.dll
-C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\bin\Debug\lib_config.pdb
-C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.csprojResolveAssemblyReference.cache
-C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.dll
-C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.pdb
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_config\bin\Debug\lib_config.dll
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_config\bin\Debug\lib_config.pdb
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.csprojResolveAssemblyReference.cache
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.dll
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.pdb
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\bin\Debug\lib_config.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\bin\Debug\lib_config.pdb
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.csprojResolveAssemblyReference.cache
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_config\obj\Debug\lib_config.pdb
