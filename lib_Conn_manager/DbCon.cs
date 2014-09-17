@@ -7,6 +7,7 @@
  * Sie können diese Vorlage unter Extras > Optionen > Codeerstellung > Standardheader ändern.
  */
 using System;
+using System.Data;
 using MySql.Data.MySqlClient;
 
 namespace lib_Conn_manager
@@ -31,7 +32,7 @@ namespace lib_Conn_manager
 		}
 		
 		
-		MySql.Data.MySqlClient.MySqlConnection conn;
+		MySqlConnection conn;
 		private string DbName;
 		private string DbHost;
 		private string UserName;
@@ -44,6 +45,25 @@ namespace lib_Conn_manager
 			UserName = user;
 			UserPassword = password;
 			
+			conn = new MySqlConnection("server = " + DbHost + ";" + " database = " + DbName + ";" + " uid = " + UserName + ";" + " pwd = " + UserPassword + ";");
+		}
+		
+		public bool connect()
+		{
+			try
+			{
+				conn.Open();
+			}
+			catch(Exception e)
+			{
+				return false;
+			}
+			return true;
+		}
+		
+		public bool ping()
+		{
+			return conn.Ping();
 		}
 	}
 }

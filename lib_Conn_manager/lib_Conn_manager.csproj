@@ -37,6 +37,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -46,8 +47,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbCon.cs" />
+    <Compile Include="DbCreate.cs" />
+    <Compile Include="DbDetails.Designer.cs">
+      <DependentUpon>DbDetails.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Include="DbOp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\lib_config\lib_config.csproj">
+      <Project>{6E131599-30C9-46CC-BB6F-A337D2AA5925}</Project>
+      <Name>lib_config</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DbDetails.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DbDetails.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using lib_config;
 
 
+
 namespace AQFM
 {
 	/// <summary>
@@ -40,6 +41,8 @@ namespace AQFM
 			Testfenster fenster = new Testfenster(konto.create_table);
 			fenster.ShowDialog();
 			*/
+			
+			
 		}
 	}
 }
