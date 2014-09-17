@@ -7,3 +7,10 @@ C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\l
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.csprojResolveAssemblyReference.cache
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.dll
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.pdb
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_Conn_manager.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_Conn_manager.pdb
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_config.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\mysql.data.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_config.pdb
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.pdb

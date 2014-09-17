@@ -1,4 +1,3 @@
-C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.exe.config
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.exe
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\AQFM.pdb
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_config.dll
