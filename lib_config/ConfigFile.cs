@@ -23,7 +23,8 @@ namespace lib_config
 		
 		private string name;
 		
-		Dictionary<string, string> info;
+		
+		private Dictionary<string, string> properties;
 			
 		public ConfigFile(string Name)
 		{
@@ -31,7 +32,8 @@ namespace lib_config
 			
 			if(File.Exists(name))
 				is_created = true;
-			
+			else
+				is_created = false;
 			
 			
 			
@@ -40,10 +42,35 @@ namespace lib_config
 				foreach(string line in File.ReadAllLines(name))
 				{
 					string[] temp = line.Split(':');
-					info.Add(temp[0], temp[1]);
+					properties.Add(temp[0], temp[1]);
 				}
 			}
 			
+		}
+		
+		void CreateFile()
+		{
+			if(!is_created)
+				File.Create(name);
+		}
+		void AddProperty(string key, string value)
+		{
+			properties.Add(key, value);
+		}
+		string GetValue(string key)
+		{
+			return properties[key];
+		}
+		void WriteFile()
+		{
+			string[] lines = new string[properties.Count];
+			int i = 0;
+			foreach(string key in properties.Keys)
+			{
+				lines[i] = key + ":" + properties[key];
+				i++;
+			}
+			File.WriteAllLines(name, lines);
 		}
 	}
 }
