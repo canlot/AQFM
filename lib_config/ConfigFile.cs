@@ -9,6 +9,7 @@
 using System;
 using System.Data;
 using System.IO;
+using System.Collections.Generic;
 
 namespace lib_config
 {
@@ -18,10 +19,30 @@ namespace lib_config
 	public class ConfigFile
 	{
 		//FileInfo file;
-		public ConfigFile(string name)
-		{
+		public bool is_created{get; private set;}
+		
+		private string name;
+		
+		Dictionary<string, string> info;
 			
-			//file  = new FileInfo(name);
+		public ConfigFile(string Name)
+		{
+			name = Name;
+			
+			if(File.Exists(name))
+				is_created = true;
+			
+			
+			
+			
+			if(is_created)
+			{
+				foreach(string line in File.ReadAllLines(name))
+				{
+					string[] temp = line.Split(':');
+					info.Add(temp[0], temp[1]);
+				}
+			}
 			
 		}
 	}
