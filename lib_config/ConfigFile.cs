@@ -24,18 +24,16 @@ namespace lib_config
 		private string name;
 		
 		
-		private Dictionary<string, string> properties;
+		private Dictionary<string, string> properties = new Dictionary<string, string>();
 			
 		public ConfigFile(string Name)
-		{
+		{			
 			name = Name;
 			
 			if(File.Exists(name))
 				is_created = true;
 			else
 				is_created = false;
-			
-			
 			
 			if(is_created)
 			{
@@ -44,24 +42,32 @@ namespace lib_config
 					string[] temp = line.Split(':');
 					properties.Add(temp[0], temp[1]);
 				}
+				File.Delete(name);
 			}
 			
 		}
 		
-		void CreateFile()
+		private void CreateFile()
 		{
 			if(!is_created)
 				File.Create(name);
 		}
-		void AddProperty(string key, string value)
+		public void AddProperty(string key, string var)
 		{
-			properties.Add(key, value);
+			properties.Add(key, var);
 		}
-		string GetValue(string key)
+		public string GetValue(string key)
 		{
 			return properties[key];
 		}
-		void WriteFile()
+		public bool IsProperty(string property)
+		{
+			if(properties.ContainsKey(property) && !(properties[property] == "")) // :FIXME: probably not working
+				return true;
+			else
+				return false;
+		}
+		public void WriteFile()
 		{
 			string[] lines = new string[properties.Count];
 			int i = 0;
@@ -70,6 +76,7 @@ namespace lib_config
 				lines[i] = key + ":" + properties[key];
 				i++;
 			}
+			
 			File.WriteAllLines(name, lines);
 		}
 	}

@@ -41,8 +41,13 @@ namespace AQFM
 			Testfenster fenster = new Testfenster(konto.create_table);
 			fenster.ShowDialog();
 			*/
+			/*
+			ConfigFile file = new ConfigFile("settings.ini");
 			
-			
+			//file.AddProperty("DbName", "AQFM");
+			file.WriteFile();
+			MessageBox.Show(file.GetValue("DbName"));
+			*/
 		}
 	}
 }
