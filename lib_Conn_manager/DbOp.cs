@@ -27,18 +27,42 @@ namespace lib_Conn_manager
 		DbCon connection;
 		
 		public bool dbCreated{get; private set;}
+		public bool propertiesReady{get; private set;}
 			
 		public DbOp()
 		{
 			if(!dbproperties.is_created)
-			{
-				dbCreated = false;
-			}
+				propertiesReady = false;
 			else
 			{
-				
+				if(al_properties_ready())
+					propertiesReady = true;
+				else
+					propertiesReady = false;
 			}
 			
+		}
+		
+		public string getDbName(void)
+		{
+			if(propertiesReady)
+				return dbproperties.GetValue(DbName);
+			else
+				return "";
+		}
+		public string getDbHost(void)
+		{
+			if(propertiesReady)
+				return dbproperties.GetValue(DbHost);
+			else
+				return "";
+		}
+		public string getDbUser(void)
+		{
+			if(propertiesReady)
+				return dbproperties.GetValue(DbUser);
+			else
+				return "";
 		}
 		private bool al_properties_ready()
 		{
@@ -46,5 +70,10 @@ namespace lib_Conn_manager
 				return true;
 			return false;
 		}
+		public bool createConnection(string password)
+		{
+			
+		}
+		
 	}
 }
