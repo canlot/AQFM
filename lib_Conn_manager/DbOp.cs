@@ -70,9 +70,24 @@ namespace lib_Conn_manager
 				return true;
 			return false;
 		}
+		public void createProperties(string host, string name, string user)
+		{
+			dbproperties.AddProperty(DbHost, host);
+			dbproperties.AddProperty(DbName, name);
+			dbproperties.AddProperty(DbUser, user);
+			dbproperties.WriteFile();
+			propertiesReady = true;
+		}
 		public bool createConnection(string password)
 		{
-			
+			connection = new DbCon(dbproperties.GetValue(DbName), 
+			                       dbproperties.GetValue(DbHost),
+			                       dbproperties.GetValue(DbUser),
+			                       password);
+			if(connection.connect() && connection.ping())
+				return true;
+			else
+				return false;
 		}
 		
 	}
