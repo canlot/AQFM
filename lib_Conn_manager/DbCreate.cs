@@ -16,9 +16,14 @@ namespace lib_Conn_manager
 	/// </summary>
 	public class DbCreate
 	{
+		List<tbl_Abstract> tabellen;
+		DbCon con;
 		
-		
-		public DbCreate()
+		public DbCreate(DbCon conn)
+		{
+			con = conn;
+		}
+		public createTables()
 		{
 			
 		}
