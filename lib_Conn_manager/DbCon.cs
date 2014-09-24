@@ -9,6 +9,8 @@
 using System;
 using System.Data;
 using MySql.Data.MySqlClient;
+using lib_config;
+
 
 namespace lib_Conn_manager
 {
@@ -34,7 +36,7 @@ namespace lib_Conn_manager
 		public bool dbCreated{get; private set;}
 		public bool propertiesReady{get; private set;}
 		
-		public DbCon(string name, string host, string user, string password)
+		public DbCon()
 		{
 			if(!dbproperties.is_created)
 				propertiesReady = false;
@@ -46,64 +48,52 @@ namespace lib_Conn_manager
 					propertiesReady = false;
 			}
 			
-			DbName = name;
-			DbHost = host;
-			UserName = user;
+			
+			
+		}
+		public bool createConnection(string password, string state = "")
+		{
+			if(!propertiesReady)
+				return false;
+			
 			UserPassword = password;
 			
-			conn = new MySqlConnection("server = " + DbHost + ";" + " database = " + DbName + ";" + " uid = " + UserName + ";" + " pwd = " + UserPassword + ";");
-		}
-		
-		public bool connect()
-		{
+			connection = new MySqlConnection("server = " + DbHost + ";" + " database = " + DbName + ";" + " uid = " + UserName + ";" + " pwd = " + UserPassword + ";");
+			
 			try
 			{
-				conn.Open();
+				connection.Open();
+				return true;
 			}
-			catch(Exception e)
+			catch(MySqlException e)
 			{
+				state = e.ErrorCode.ToString();
 				return false;
 			}
-			return true;
+				
 		}
-		public string getDbName()
-		{
-			if(propertiesReady)
-				return dbproperties.GetValue(DbName);
-			else
-				return "";
-		}
-		public string getDbHost()
-		{
-			if(propertiesReady)
-				return dbproperties.GetValue(DbHost);
-			else
-				return "";
-		}
-		public string getDbUser()
-		{
-			if(propertiesReady)
-				return dbproperties.GetValue(DbUser);
-			else
-				return "";
-		}
+				
 		private bool al_properties_ready()
 		{
-			if(dbproperties.IsProperty(DbName) && dbproperties.IsProperty(DbHost) && dbproperties.IsProperty(DbUser))
+			if(dbproperties.IsProperty(k_DbName) && 
+			   dbproperties.IsProperty(k_DbHost) && 
+			   dbproperties.IsProperty(k_DbUser))
+			{
+				DbName = dbproperties.GetValue(k_DbName);
+				DbHost = dbproperties.GetValue(k_DbHost);
+				UserName = dbproperties.GetValue(k_DbUser);
 				return true;
-			return false;
+			}
+			else
+				return false;
 		}
 		public void createProperties(string host, string name, string user)
 		{
-			dbproperties.AddProperty(DbHost, host);
-			dbproperties.AddProperty(DbName, name);
-			dbproperties.AddProperty(DbUser, user);
+			dbproperties.AddProperty(k_DbHost, host);
+			dbproperties.AddProperty(k_DbName, name);
+			dbproperties.AddProperty(k_DbUser, user);
 			dbproperties.WriteFile();
 			propertiesReady = true;
-		}
-		public bool ping()
-		{
-			return conn.Ping();
 		}
 	}
 }

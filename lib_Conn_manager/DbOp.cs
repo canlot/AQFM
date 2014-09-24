@@ -25,17 +25,7 @@ namespace lib_Conn_manager
 		}
 		
 		
-		public bool createConnection(string password)
-		{
-			connection = new DbCon(dbproperties.GetValue(DbName), 
-			                       dbproperties.GetValue(DbHost),
-			                       dbproperties.GetValue(DbUser),
-			                       password);
-			if(connection.connect() && connection.ping())
-				return true;
-			else
-				return false;
-		}
+		
 		public bool createDb()
 		{
 			

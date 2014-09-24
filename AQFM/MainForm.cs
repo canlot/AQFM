@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using lib_config;
+using lib_Conn_manager;
 
 
 
@@ -48,6 +49,13 @@ namespace AQFM
 			file.WriteFile();
 			MessageBox.Show(file.GetValue("DbName"));
 			*/
+			string state = "";
+			DbCon connection = new DbCon();
+			if(!connection.propertiesReady)
+				connection.createProperties("localhost", "aqfm", "root");
+			
+			if(!connection.createConnection("", state))
+				MessageBox.Show(state);
 		}
 	}
 }

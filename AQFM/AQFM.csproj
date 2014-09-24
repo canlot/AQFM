@@ -70,6 +70,10 @@
       <Project>{6E131599-30C9-46CC-BB6F-A337D2AA5925}</Project>
       <Name>lib_config</Name>
     </ProjectReference>
+    <ProjectReference Include="..\lib_Conn_manager\lib_Conn_manager.csproj">
+      <Project>{75BAE44E-B62E-4C5E-ADAD-27C199AF6523}</Project>
+      <Name>lib_conn_manager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

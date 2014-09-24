@@ -18,3 +18,6 @@ C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_config.dl
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_config.pdb
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.exe
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.pdb
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_Conn_manager.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\MySql.Data.dll
+C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_Conn_manager.pdb

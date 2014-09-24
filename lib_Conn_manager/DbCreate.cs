@@ -7,6 +7,7 @@
  * Sie können diese Vorlage unter Extras > Optionen > Codeerstellung > Standardheader ändern.
  */
 using System;
+using System.Collections.Generic;
 using lib_config;
 
 namespace lib_Conn_manager
@@ -23,9 +24,9 @@ namespace lib_Conn_manager
 		{
 			con = conn;
 		}
-		public createTables()
+		public bool createTables()
 		{
-			
+			return false;
 		}
 	}
 }
