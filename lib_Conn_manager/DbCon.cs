@@ -35,6 +35,7 @@ namespace lib_Conn_manager
 		
 		public bool dbCreated{get; private set;}
 		public bool propertiesReady{get; private set;}
+		public string State{get; private set;}
 		
 		public DbCon()
 		{
@@ -51,7 +52,7 @@ namespace lib_Conn_manager
 			
 			
 		}
-		public bool createConnection(string password, string state = "")
+		public bool createConnection(string password)
 		{
 			if(!propertiesReady)
 				return false;
@@ -67,7 +68,7 @@ namespace lib_Conn_manager
 			}
 			catch(MySqlException e)
 			{
-				state = e.ErrorCode.ToString();
+				State = e.Number.ToString();
 				return false;
 			}
 				

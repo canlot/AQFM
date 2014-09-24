@@ -54,8 +54,8 @@ namespace AQFM
 			if(!connection.propertiesReady)
 				connection.createProperties("localhost", "aqfm", "root");
 			
-			if(!connection.createConnection("", state))
-				MessageBox.Show(state);
+			if(!connection.createConnection(""))
+				MessageBox.Show(connection.State);
 		}
 	}
 }
