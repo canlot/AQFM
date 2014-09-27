@@ -17,14 +17,16 @@ namespace lib_Conn_manager
 	/// </summary>
 	public class DbCreate
 	{
-		List<tbl_Abstract> tabellen;
-		DbCon con;
+		List<tbl_Abstract> tabellen = new List<tbl_Abstract>();
 		
-		public DbCreate(DbCon conn)
+		public DbCreate()
 		{
-			con = conn;
+			tabellen.Add(new tbl_Konto());
+			tabellen.Add(new tbl_Person());
+			tabellen.Add(new tbl_TransferArt());
+			tabellen.Add(new tbl_Waehrung());
 		}
-		public bool createTables()
+		public bool createTables(DbCon conn)
 		{
 			return false;
 		}

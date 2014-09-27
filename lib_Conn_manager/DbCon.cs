@@ -36,6 +36,7 @@ namespace lib_Conn_manager
 		public bool dbCreated{get; private set;}
 		public bool propertiesReady{get; private set;}
 		public string State{get; private set;}
+		public string connString{get; private set;}
 		
 		public DbCon()
 		{
@@ -59,7 +60,9 @@ namespace lib_Conn_manager
 			
 			UserPassword = password;
 			
-			connection = new MySqlConnection("server = " + DbHost + ";" + " database = " + DbName + ";" + " uid = " + UserName + ";" + " pwd = " + UserPassword + ";");
+			//connection = new MySqlConnection("server = " + DbHost + ";" + " database = " + DbName + ";" + " uid = " + UserName + ";" + " pwd = " + UserPassword + ";");
+			connString = "server = " + DbHost + ";" + " uid = " + UserName + ";" + " pwd = " + UserPassword + ";";
+			connection = new MySqlConnection(connString);
 			
 			try
 			{
@@ -68,10 +71,27 @@ namespace lib_Conn_manager
 			}
 			catch(MySqlException e)
 			{
-				State = e.Number.ToString();
+				//State = e.Number.ToString();
+				State = e.Message;
+				//State = e.ErrorCode.ToString();
 				return false;
 			}
 				
+		}
+		public bool selectDb()
+		{
+			if(!propertiesReady && connection.State == ConnectionState.Open)
+				return false;
+			try
+			{
+				connection.ChangeDatabase(DbName);
+				return true;
+			}
+			catch(MySqlException e)
+			{
+				State = e.Message + " + " + e.Number.ToString() ;
+				return false;
+			}
 		}
 				
 		private bool al_properties_ready()
@@ -90,6 +110,7 @@ namespace lib_Conn_manager
 		}
 		public void createProperties(string host, string name, string user)
 		{
+			dbproperties.AllClear();
 			dbproperties.AddProperty(k_DbHost, host);
 			dbproperties.AddProperty(k_DbName, name);
 			dbproperties.AddProperty(k_DbUser, user);

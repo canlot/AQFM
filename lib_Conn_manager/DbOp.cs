@@ -9,6 +9,8 @@
 using System;
 using System.Collections.Generic;
 using lib_config;
+using System.Data;
+
 
 namespace lib_Conn_manager
 {
@@ -17,7 +19,8 @@ namespace lib_Conn_manager
 	/// </summary>
 	public class DbOp
 	{
-			
+		List<tbl_Abstract> tabellen = new List<tbl_Abstract>();
+		
 		public DbOp()
 		{
 			

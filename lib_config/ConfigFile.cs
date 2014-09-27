@@ -42,7 +42,6 @@ namespace lib_config
 					string[] temp = line.Split(':');
 					properties.Add(temp[0], temp[1]);
 				}
-				File.Delete(name);
 			}
 			
 		}
@@ -54,7 +53,11 @@ namespace lib_config
 		}
 		public void AddProperty(string key, string var)
 		{
+			if(is_created)
+				File.Delete(name);
+			
 			properties.Add(key, var);
+			WriteFile();
 		}
 		public string GetValue(string key)
 		{
@@ -66,6 +69,10 @@ namespace lib_config
 				return true;
 			else
 				return false;
+		}
+		public void AllClear()
+		{
+			properties.Clear();
 		}
 		public void WriteFile()
 		{

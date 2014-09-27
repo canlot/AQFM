@@ -49,13 +49,17 @@ namespace AQFM
 			file.WriteFile();
 			MessageBox.Show(file.GetValue("DbName"));
 			*/
-			string state = "";
 			DbCon connection = new DbCon();
-			if(!connection.propertiesReady)
-				connection.createProperties("localhost", "aqfm", "root");
+			connection.createProperties("127.0.0.1", "test", "root");
 			
 			if(!connection.createConnection(""))
 				MessageBox.Show(connection.State);
+			else
+			{
+				if(!connection.selectDb())
+					MessageBox.Show(connection.State);
+			}
+			//MessageBox.Show(connection.connString);
 		}
 	}
 }
