@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using lib_config;
 using System.Data;
+using MySql.Data.MySqlClient;
 
 
 namespace lib_Conn_manager
@@ -19,21 +20,18 @@ namespace lib_Conn_manager
 	/// </summary>
 	public class DbOp
 	{
-		List<tbl_Abstract> tabellen = new List<tbl_Abstract>();
+		protected MySqlDataAdapter adapter = new MySqlDataAdapter();
+		protected DbCon connection;
 		
-		public DbOp()
+		protected string insertCommand;
+		
+		public DbOp(DbCon con)
 		{
-			
-			
+			connection = con;
+
 		}
 		
 		
-		
-		public bool createDb()
-		{
-			
-			return false;
-		}
 		
 	}
 }

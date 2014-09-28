@@ -16,14 +16,14 @@ namespace lib_config
 	public class tbl_Einkommen : tbl_Abstract
 	{
 		
-		public readonly string id = "Id";
-		public readonly string personNr = "personNr";
-		public readonly string betrag = "Betrag";
-		public readonly string waehrungsNr = "waehrungsNr";
-		public readonly string auszugnr = "Auszug";
-		public readonly string transferArtNr = "transferArtNr";
-		public readonly string kontoNr = "kontoNr";
-		public readonly string datum = "Datum";
+		static public readonly string id = "Id";
+		static public readonly string personNr = "personNr";
+		static public readonly string betrag = "Betrag";
+		static public readonly string waehrungsNr = "waehrungsNr";
+		static public readonly string auszugnr = "Auszug";
+		static public readonly string transferArtNr = "transferArtNr";
+		static public readonly string kontoNr = "kontoNr";
+		static public readonly string datum = "Datum";
 		
 		
 		public tbl_Einkommen():base("tbl_Einkommen")

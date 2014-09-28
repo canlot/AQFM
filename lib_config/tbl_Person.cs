@@ -16,18 +16,18 @@ namespace lib_config
 	public class tbl_Person : tbl_Abstract
 	{
 		
-		public readonly string id = "Id";
-		public readonly string name = "Name";
-		public readonly string vorname = "Vorname";
-		public readonly string land = "Land";
-		public readonly string plz = "PLZ";
-		public readonly string ort = "Ort";
-		public readonly string strasse = "Strasse";
-		public readonly string hausnummer = "Hausnummer";
-		public readonly string telefon = "Telefon";
-		public readonly string email = "Email";
-		public readonly string bic = "BIC"; //Bankleitzahl
-		public readonly string iban = "IBAN"; //Kontonummer
+		static public readonly string id = "Id";
+		static public readonly string name = "Name";
+		static public readonly string vorname = "Vorname";
+		static public readonly string land = "Land";
+		static public readonly string plz = "PLZ";
+		static public readonly string ort = "Ort";
+		static public readonly string strasse = "Strasse";
+		static public readonly string hausnummer = "Hausnummer";
+		static public readonly string telefon = "Telefon";
+		static public readonly string email = "Email";
+		static public readonly string bic = "BIC"; //Bankleitzahl
+		static public readonly string iban = "IBAN"; //Kontonummer
 		
 		
 		public tbl_Person():base("tbl_Person")

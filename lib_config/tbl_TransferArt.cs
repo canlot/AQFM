@@ -16,8 +16,8 @@ namespace lib_config
 	public class tbl_TransferArt : tbl_Abstract
 	{
 		
-		public readonly string id = "Id";
-		public readonly string TransferArt = "Transfer Art";
+		static public readonly string id = "Id";
+		static public readonly string TransferArt = "Transfer Art";
 		
 		public tbl_TransferArt():base("tbl_TransferArt")
 		{

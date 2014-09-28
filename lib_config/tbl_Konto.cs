@@ -16,10 +16,10 @@ namespace lib_config
 	public class tbl_Konto : tbl_Abstract
 	{
 		
-		public readonly string id = "Id";
-		public readonly string konto = "Konto";
-		public readonly string bezeichnung = "Bezeichnung";
-		public readonly string kategorie = "Kategorie";
+		static public readonly string id = "Id";
+		static public readonly string konto = "Konto";
+		static public readonly string bezeichnung = "Bezeichnung";
+		static public readonly string kategorie = "Kategorie";
 		
 		
 		

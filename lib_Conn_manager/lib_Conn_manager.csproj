@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DbCon.cs" />
     <Compile Include="DbCreate.cs" />
+    <Compile Include="DbIncome.cs" />
     <Compile Include="DbOp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

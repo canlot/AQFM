@@ -15,8 +15,8 @@ namespace lib_config
 	/// </summary>
 	public class tbl_Waehrung : tbl_Abstract
 	{
-		public readonly string id = "Id";
-		public readonly string waerung = "Währung";
+		static public readonly string id = "Id";
+		static public readonly string waerung = "Währung";
 		
 		public tbl_Waehrung():base("tbl_Waerung")
 		{

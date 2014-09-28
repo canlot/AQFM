@@ -23,7 +23,8 @@ namespace lib_Conn_manager
 		
 		ConfigFile dbproperties = new ConfigFile("DbSettings.ini");
 		
-		private MySqlConnection connection;
+		public MySqlConnection connection{get; private set;}
+		
 		private string DbName;
 		private string DbHost;
 		private string UserName;
@@ -37,6 +38,7 @@ namespace lib_Conn_manager
 		public bool propertiesReady{get; private set;}
 		public string State{get; private set;}
 		public string connString{get; private set;}
+		
 		
 		public DbCon()
 		{

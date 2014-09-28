@@ -16,16 +16,16 @@ namespace lib_config
 	public class tbl_Ausgaben : tbl_Abstract
 	{
 		
-		public readonly string id = "Id";
-		public readonly string art = "Art";
-		public readonly string verantwortlicher = "Verantwortlicher";
-		public readonly string datum = "Datum";
-		public readonly string betrag = "Betrag";
-		public readonly string auszugnr = "Auszug";
-		public readonly string transferArt = "transferArt";
-		public readonly string zustaendigkeit = "Zuständigkeit";
-		public readonly string bemerkung = "Bemerkung";
-		public readonly string kontoNr = "kontoNr";
+		static public readonly string id = "Id";
+		static public readonly string art = "Art";
+		static public readonly string verantwortlicher = "Verantwortlicher";
+		static public readonly string datum = "Datum";
+		static public readonly string betrag = "Betrag";
+		static public readonly string auszugnr = "Auszug";
+		static public readonly string transferArt = "transferArt";
+		static public readonly string zustaendigkeit = "Zuständigkeit";
+		static public readonly string bemerkung = "Bemerkung";
+		static public readonly string kontoNr = "kontoNr";
 		
 		
 		
