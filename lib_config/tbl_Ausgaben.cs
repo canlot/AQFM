@@ -16,6 +16,8 @@ namespace lib_config
 	public class tbl_Ausgaben : tbl_Abstract
 	{
 		
+		static public readonly string tbl_Name = "tbl_Ausgabe";
+		
 		static public readonly string id = "Id";
 		static public readonly string art = "Art";
 		static public readonly string verantwortlicher = "Verantwortlicher";
@@ -29,7 +31,7 @@ namespace lib_config
 		
 		
 		
-		public tbl_Ausgaben():base("tbl_Ausgaben")
+		public tbl_Ausgaben()
 		{
 			
 			

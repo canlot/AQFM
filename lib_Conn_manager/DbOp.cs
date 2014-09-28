@@ -24,11 +24,18 @@ namespace lib_Conn_manager
 		protected DbCon connection;
 		
 		protected string insertCommand;
+		protected string selectCommand;
+		
 		
 		public DbOp(DbCon con)
 		{
 			connection = con;
-
+			adapter.SelectCommand = new MySqlCommand();
+		}
+		
+		public void FillTable(DataTable table)
+		{
+			adapter.Fill(table);
 		}
 		
 		

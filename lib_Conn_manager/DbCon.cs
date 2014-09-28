@@ -25,9 +25,9 @@ namespace lib_Conn_manager
 		
 		public MySqlConnection connection{get; private set;}
 		
-		private string DbName;
-		private string DbHost;
-		private string UserName;
+		public string DbName{get; private set;}
+		public string DbHost{get; private set;}
+		public string UserName{get; private set;}
 		private string UserPassword;
 		
 		private string k_DbName = "DbName";

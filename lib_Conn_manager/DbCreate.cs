@@ -9,6 +9,7 @@
 using System;
 using System.Collections.Generic;
 using lib_config;
+using MySql.Data.MySqlClient;
 
 namespace lib_Conn_manager
 {
@@ -19,16 +20,37 @@ namespace lib_Conn_manager
 	{
 		List<tbl_Abstract> tabellen = new List<tbl_Abstract>();
 		
-		public DbCreate()
+		MySqlDataAdapter adapter = new MySqlDataAdapter();
+		MySqlCommand command = new MySqlCommand();
+		
+		DbCon connection;
+		
+		public DbCreate(DbCon con)
 		{
+			connection = con;
+			adapter.InsertCommand = command;
+			command.Connection = connection.connection;
+			
 			tabellen.Add(new tbl_Konto());
 			tabellen.Add(new tbl_Person());
 			tabellen.Add(new tbl_TransferArt());
 			tabellen.Add(new tbl_Waehrung());
 		}
-		public bool createTables(DbCon conn)
+		public string createTables()
 		{
-			return false;
+			string test = "";
+			command.CommandText = "create database if not exists " + connection.DbName + ";";
+			command.ExecuteNonQuery();
+			test += command.CommandText + "\n";
+			foreach(tbl_Abstract tabelle in tabellen)
+			{
+				command.CommandText = "use " + connection.DbName + " ; " +  tabelle.create_table;
+				command.ExecuteNonQuery();
+				test += command.CommandText + "\n";
+			}
+			
+			
+			return test;
 		}
 	}
 }

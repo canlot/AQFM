@@ -15,6 +15,7 @@ namespace lib_config
 	/// </summary>
 	public class tbl_Konto : tbl_Abstract
 	{
+		static public readonly string tbl_Name = "tbl_Konto";
 		
 		static public readonly string id = "Id";
 		static public readonly string konto = "Konto";
@@ -23,7 +24,7 @@ namespace lib_config
 		
 		
 		
-		public tbl_Konto():base("tbl_Konto")
+		public tbl_Konto()
 		{
 			
 			

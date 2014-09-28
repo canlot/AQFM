@@ -15,10 +15,12 @@ namespace lib_config
 	/// </summary>
 	public class tbl_Waehrung : tbl_Abstract
 	{
+		static public readonly string tbl_Name = "tbl_Waerung";
+		
 		static public readonly string id = "Id";
 		static public readonly string waerung = "Währung";
 		
-		public tbl_Waehrung():base("tbl_Waerung")
+		public tbl_Waehrung()
 		{
 			
 			create_table = "create table " + tbl_Name + "( " +

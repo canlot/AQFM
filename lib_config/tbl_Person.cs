@@ -16,6 +16,8 @@ namespace lib_config
 	public class tbl_Person : tbl_Abstract
 	{
 		
+		static public readonly string tbl_Name = "tbl_Person";
+		
 		static public readonly string id = "Id";
 		static public readonly string name = "Name";
 		static public readonly string vorname = "Vorname";
@@ -30,7 +32,7 @@ namespace lib_config
 		static public readonly string iban = "IBAN"; //Kontonummer
 		
 		
-		public tbl_Person():base("tbl_Person")
+		public tbl_Person()
 		{
 			
 			

@@ -50,15 +50,21 @@ namespace AQFM
 			MessageBox.Show(file.GetValue("DbName"));
 			*/
 			DbCon connection = new DbCon();
-			connection.createProperties("127.0.0.1", "test", "root");
+			connection.createProperties("127.0.0.1", "aqfm", "root");
 			
 			if(!connection.createConnection(""))
 				MessageBox.Show(connection.State);
 			else
 			{
 				if(!connection.selectDb())
-					MessageBox.Show(connection.State);
+				{
+					DbCreate db = new DbCreate(connection);
+					Testfenster test = new Testfenster(db.createTables());
+					test.ShowDialog();
+				}
+				
 			}
+			
 			//MessageBox.Show(connection.connString);
 		}
 	}

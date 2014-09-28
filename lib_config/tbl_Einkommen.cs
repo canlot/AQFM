@@ -15,6 +15,7 @@ namespace lib_config
 	/// </summary>
 	public class tbl_Einkommen : tbl_Abstract
 	{
+		static public readonly string tbl_Name = "tbl_Einkommen";
 		
 		static public readonly string id = "Id";
 		static public readonly string personNr = "personNr";
@@ -26,7 +27,7 @@ namespace lib_config
 		static public readonly string datum = "Datum";
 		
 		
-		public tbl_Einkommen():base("tbl_Einkommen")
+		public tbl_Einkommen()
 		{
 			
 			//Tabelle erstellen

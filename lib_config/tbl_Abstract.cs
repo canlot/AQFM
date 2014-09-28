@@ -15,7 +15,6 @@ namespace lib_config
 	/// </summary>
 	public abstract class tbl_Abstract
 	{
-		public readonly string tbl_Name;
 		
 		private string query;
 		
@@ -31,9 +30,12 @@ namespace lib_config
 			}
 		}
 		
-		public tbl_Abstract(string Name)
+		public tbl_Abstract()
 		{
-			tbl_Name = Name;
+		}
+		static public string DateStamp()
+		{
+			return DateTime.Today.Month.ToString() + "_" + DateTime.Today.Year.ToString();
 		}
 	}
 }
