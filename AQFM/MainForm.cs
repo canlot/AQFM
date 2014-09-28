@@ -7,6 +7,7 @@
  * Sie können diese Vorlage unter Extras > Optionen > Codeerstellung > Standardheader ändern.
  */
 using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -22,6 +23,7 @@ namespace AQFM
 	/// </summary>
 	public partial class MainForm : Form
 	{
+		DataTable incomeTable = new DataTable();
 		public MainForm()
 		{
 			//
@@ -64,6 +66,9 @@ namespace AQFM
 				}
 				
 			}
+			DbIncome income = new DbIncome(connection);
+			income.FillTable(incomeTable);
+			dataGridView_income.DataSource = incomeTable;
 			
 			//MessageBox.Show(connection.connString);
 		}

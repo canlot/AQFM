@@ -9,6 +9,7 @@
 using System;
 using System.Data;
 
+
 namespace lib_Conn_manager
 {
 	/// <summary>
@@ -22,9 +23,20 @@ namespace lib_Conn_manager
 			
 			
 		}
-		public void FillTable(DataTable table, string tableName)
+		public void FillTable(DataTable table, string tableName = "")
 		{
-			//selectCommand = "select from " tableName 
+			string example = "select tbl_einkommen_9_2014.Id, tbl_person.Name, tbl_waerung.Währung, tbl_transferart.TransferArt " +
+				"from tbl_einkommen_9_2014 " +
+				"join tbl_person " +
+				"on tbl_einkommen_9_2014.personNr = tbl_person.Id "+
+				"join tbl_waerung "+
+				"on tbl_einkommen_9_2014.waehrungsNr =  tbl_waerung.Id "+
+				"join tbl_transferart "+
+				"on tbl_einkommen_9_2014.transferArtNr = tbl_transferart.Id";
+			
+			selectCommand = example;
+			adapter.SelectCommand = new MySql.Data.MySqlClient.MySqlCommand(example, connection.connection);
+			base.FillTable(table);
 		}
 	}
 }
