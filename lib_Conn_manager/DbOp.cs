@@ -38,7 +38,16 @@ namespace lib_Conn_manager
 			adapter.Fill(table);
 		}
 		
-		
+		protected string GiveFullColumnName(string tableName, string columnName, bool notKomma = false)
+		{
+			string delimiter = ".";
+			string komma = ",";
+			string space = " ";
+			if(!notKomma)
+				return tableName + delimiter + columnName + komma + space;
+			else
+				return tableName + delimiter + columnName + space;
+		}
 		
 	}
 }

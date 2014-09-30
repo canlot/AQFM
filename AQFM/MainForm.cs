@@ -67,8 +67,11 @@ namespace AQFM
 				
 			}
 			DbIncome income = new DbIncome(connection);
-			income.FillTable(incomeTable);
+			income.FillTable(incomeTable, "tbl_einkommen_9_2014");
 			dataGridView_income.DataSource = incomeTable;
+			
+			//income.FillTable(incomeTable);
+			//dataGridView_income.DataSource = incomeTable;
 			
 			//MessageBox.Show(connection.connString);
 		}
