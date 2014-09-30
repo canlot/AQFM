@@ -153,10 +153,12 @@ namespace AQFM
 			// 
 			// dataGridView_income
 			// 
+			this.dataGridView_income.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView_income.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView_income.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridView_income.Location = new System.Drawing.Point(0, 0);
 			this.dataGridView_income.Name = "dataGridView_income";
+			this.dataGridView_income.ReadOnly = true;
 			this.dataGridView_income.Size = new System.Drawing.Size(665, 168);
 			this.dataGridView_income.TabIndex = 0;
 			// 

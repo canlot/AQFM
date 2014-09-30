@@ -45,13 +45,21 @@ namespace lib_Conn_manager
 				GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.plz) + GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.ort) +
 				GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.strasse) + GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.hausnummer) +
 				GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.telefon) + GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.bic) +
-				GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.iban) + GiveFullColumnName(tbl_Konto.tbl_Name, tbl_Konto.konto) +
-				GiveFullColumnName(tbl_Konto.tbl_Name, tbl_Konto.bezeichnung, true) +
+				GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.iban) + 
+				GiveFullColumnName(tableName, tbl_Einkommen.datum) + GiveFullColumnName(tableName, tbl_Einkommen.betrag) + 
+				GiveFullColumnName(tbl_Waehrung.tbl_Name, tbl_Waehrung.waerung) +
+				GiveFullColumnName(tableName, tbl_Einkommen.auszugnr) + GiveFullColumnName(tbl_TransferArt.tbl_Name, tbl_TransferArt.TransferArt) +
+				GiveFullColumnName(tbl_Konto.tbl_Name, tbl_Konto.konto) + GiveFullColumnName(tbl_Konto.tbl_Name, tbl_Konto.bezeichnung, true) +
 				"from " + tableName + " " +
-				"join " + tbl_Person.tbl_Name + " " +
+				"left join " + tbl_Person.tbl_Name + " " +
 				"on " + GiveFullColumnName(tableName, tbl_Einkommen.personNr, true) + " = " + GiveFullColumnName(tbl_Person.tbl_Name, tbl_Person.id, true) +
-				"join " + tbl_Konto.tbl_Name + " " +
-				"on " + GiveFullColumnName(tableName, tbl_Einkommen.kontoNr, true) + " = " + GiveFullColumnName(tbl_Konto.tbl_Name, tbl_Konto.id, true);
+				"left join " + tbl_Konto.tbl_Name + " " +
+				"on " + GiveFullColumnName(tableName, tbl_Einkommen.kontoNr, true) + " = " + GiveFullColumnName(tbl_Konto.tbl_Name, tbl_Konto.id, true) +
+				"left join " + tbl_TransferArt.tbl_Name + " " +
+				"on " + GiveFullColumnName(tableName, tbl_Einkommen.transferArtNr, true) + " = " + GiveFullColumnName(tbl_TransferArt.tbl_Name, tbl_TransferArt.id, true) +
+				"left join " + tbl_Waehrung.tbl_Name + " " +
+				"on " + GiveFullColumnName(tableName, tbl_Einkommen.waehrungsNr, true) + " = " + GiveFullColumnName(tbl_Waehrung.tbl_Name, tbl_Waehrung.id, true);
+				
 			testString = selectCommand;
 			
 		}
