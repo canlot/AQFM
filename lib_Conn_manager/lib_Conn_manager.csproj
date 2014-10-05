@@ -51,12 +51,17 @@
     <Compile Include="DbIncome.cs" />
     <Compile Include="DbOp.cs" />
     <Compile Include="DbOutgoings.cs" />
+    <Compile Include="DbPersonControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\lib_config\lib_config.csproj">
       <Project>{6E131599-30C9-46CC-BB6F-A337D2AA5925}</Project>
       <Name>lib_config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib_data_classes\lib_data_classes.csproj">
+      <Project>{2E9F0D8C-7368-4523-9067-BC528418CC2B}</Project>
+      <Name>lib_data_classes</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

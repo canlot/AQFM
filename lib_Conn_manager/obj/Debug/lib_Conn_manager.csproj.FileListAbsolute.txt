@@ -14,3 +14,5 @@ C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\my
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_config.pdb
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.dll
 C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\obj\Debug\lib_Conn_manager.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_data_classes.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_Conn_manager\bin\Debug\lib_data_classes.pdb

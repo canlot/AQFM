@@ -46,9 +46,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IncomeInsertFormular.cs" />
+    <Compile Include="IncomeInsertFormular.Designer.cs">
+      <DependentUpon>IncomeInsertFormular.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonControl.cs" />
+    <Compile Include="PersonControl.Designer.cs">
+      <DependentUpon>PersonControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,8 +66,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="IncomeInsertFormular.resx">
+      <DependentUpon>IncomeInsertFormular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonControl.resx">
+      <DependentUpon>PersonControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Testfenster.resx">
       <DependentUpon>Testfenster.cs</DependentUpon>
@@ -73,6 +87,10 @@
     <ProjectReference Include="..\lib_Conn_manager\lib_Conn_manager.csproj">
       <Project>{75BAE44E-B62E-4C5E-ADAD-27C199AF6523}</Project>
       <Name>lib_conn_manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib_data_classes\lib_data_classes.csproj">
+      <Project>{2E9F0D8C-7368-4523-9067-BC528418CC2B}</Project>
+      <Name>lib_data_classes</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -69,6 +69,10 @@ namespace AQFM
 			DbIncome income = new DbIncome(connection);
 			income.FillTable(incomeTable, "tbl_einkommen_9_2014");
 			dataGridView_income.DataSource = incomeTable;
+			
+			PersonControl control = new PersonControl(connection);
+			control.ShowDialog();
+			
 			//Testfenster testfenster = new Testfenster(income.testString);
 			//testfenster.ShowDialog();
 			//income.FillTable(incomeTable);

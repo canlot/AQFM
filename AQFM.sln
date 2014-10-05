@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib_print", "lib_print\lib_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib_config", "lib_config\lib_config.csproj", "{6E131599-30C9-46CC-BB6F-A337D2AA5925}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib_data_classes", "lib_data_classes\lib_data_classes.csproj", "{2E9F0D8C-7368-4523-9067-BC528418CC2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,5 +40,9 @@ Global
 		{6E131599-30C9-46CC-BB6F-A337D2AA5925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6E131599-30C9-46CC-BB6F-A337D2AA5925}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6E131599-30C9-46CC-BB6F-A337D2AA5925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9F0D8C-7368-4523-9067-BC528418CC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9F0D8C-7368-4523-9067-BC528418CC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9F0D8C-7368-4523-9067-BC528418CC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9F0D8C-7368-4523-9067-BC528418CC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -24,3 +24,7 @@ C:\Users\Jake\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_Conn_manag
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_Conn_manager.dll
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\MySql.Data.dll
 C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_Conn_manager.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.IncomeInsertFormular.resources
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\obj\Debug\AQFM.PersonControl.resources
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_data_classes.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\AQFM\bin\Debug\lib_data_classes.pdb
