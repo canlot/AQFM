@@ -54,7 +54,9 @@ namespace lib_Conn_manager
 			
 			while(reader.Read())
 			{
-				person.id = reader.GetInt32(tbl_Person.id);
+				if(!reader.IsDBNull(reader.GetOrdinal(tbl_Person.id))
+					person.id = reader.GetInt32(tbl_Person.id);
+					
 				person.vorname = reader.GetString(tbl_Person.vorname);
 				person.name = reader.GetString(tbl_Person.name);
 				person.iban = reader.GetString(tbl_Person.iban);
@@ -70,5 +72,6 @@ namespace lib_Conn_manager
 			reader.Close();
 			return person;
 		}
+		
 	}
 }

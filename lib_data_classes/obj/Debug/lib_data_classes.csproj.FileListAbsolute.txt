@@ -1,0 +1,7 @@
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_classes\obj\Debug\lib_data_classes.csprojResolveAssemblyReference.cache
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_classes\bin\Debug\lib_data_classes.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_classes\bin\Debug\lib_data_classes.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_classes\bin\Debug\lib_config.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_classes\bin\Debug\lib_config.pdb
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_classes\obj\Debug\lib_data_classes.dll
+C:\Users\Jakob\Documents\SharpDevelop Projects\AQFM\lib_data_classes\obj\Debug\lib_data_classes.pdb
